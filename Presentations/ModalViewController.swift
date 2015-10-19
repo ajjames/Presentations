@@ -14,13 +14,13 @@ class ModalViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func didTapPopButton(sender: UIButton)
+    {
+        navigationController?.popViewControllerAnimated(true)
     }
     
-    @IBAction func didTapView(sender: UITapGestureRecognizer)
+    @IBAction func didTapDismissButton(sender: UIButton)
     {
         dismissViewControllerAnimated(true, completion: nil)
     }
