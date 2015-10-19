@@ -25,7 +25,7 @@
                                         <animations/>
                                         <state key="normal" title="navigation controller"/>
                                         <connections>
-                                            <segue destination="NOj-PN-vyW" kind="show" id="q6z-rz-I7e"/>
+                                            <segue destination="NOj-PN-vyW" kind="presentation" modalTransitionStyle="flipHorizontal" id="q6z-rz-I7e"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRw-cM-Sls">
@@ -33,7 +33,7 @@
                                         <animations/>
                                         <state key="normal" title="no navigation controller"/>
                                         <connections>
-                                            <segue destination="KdO-OE-qX9" kind="show" id="Ykf-p3-qi7"/>
+                                            <segue destination="KdO-OE-qX9" kind="presentation" modalTransitionStyle="flipHorizontal" id="Ykf-p3-qi7"/>
                                         </connections>
                                     </button>
                                 </subviews>

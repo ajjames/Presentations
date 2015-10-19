@@ -14,7 +14,6 @@ class ChoiceViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        print("\(self)")
     }
     
     @IBAction func unwindToChoice(segue:UIStoryboardSegue)
