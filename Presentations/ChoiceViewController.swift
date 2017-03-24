@@ -8,17 +8,10 @@
 
 import UIKit
 
-class ChoiceViewController: UIViewController
-{
-
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-    }
+class ChoiceViewController: UIViewController {
     
-    @IBAction func unwindToChoice(segue:UIStoryboardSegue)
-    {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func unwindToChoice(_ segue:UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
     }
 
 }

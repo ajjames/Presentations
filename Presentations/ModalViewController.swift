@@ -9,20 +9,13 @@
 import UIKit
 
 class ModalViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @IBAction func didTapPopButton(_ sender: UIButton) {
+        _ = navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func didTapPopButton(sender: UIButton)
-    {
-        navigationController?.popViewControllerAnimated(true)
-    }
-    
-    @IBAction func didTapDismissButton(sender: UIButton)
-    {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func didTapDismissButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
 }

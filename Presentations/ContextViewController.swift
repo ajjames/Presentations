@@ -8,12 +8,10 @@
 
 import UIKit
 
-class ContextViewController: UIViewController
-{
+class ContextViewController: UIViewController {
 
-    @IBAction func didToggleSwitch(sender: UISwitch)
-    {
-        self.definesPresentationContext = sender.on
+    @IBAction func didToggleSwitch(_ sender: UISwitch) {
+        self.definesPresentationContext = sender.isOn
     }
     
 }

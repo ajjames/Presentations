@@ -8,19 +8,13 @@
 
 import UIKit
 
-class TopViewController: UIViewController
-{
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class TopViewController: UIViewController {
+    
+    @IBAction func dismiss(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func dismiss(sender: AnyObject)
-    {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    override func viewControllerForUnwindSegueAction(action: Selector, fromViewController: UIViewController, withSender sender: AnyObject?) -> UIViewController?
-    {
+    override func forUnwindSegueAction(_ action: Selector, from fromViewController: UIViewController, withSender sender: Any?) -> UIViewController? {
         return self.presentingViewController
     }
 }

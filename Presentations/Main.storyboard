@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ru2-eg-iY7">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ru2-eg-iY7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Choice View Controller-->
@@ -14,34 +18,30 @@
                         <viewControllerLayoutGuide type="bottom" id="19s-on-giD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R5w-oN-gVL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-dP-1to">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-wW-9Je">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
-                                        <animations/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
                                         <state key="normal" title="navigation controller"/>
                                         <connections>
                                             <segue destination="NOj-PN-vyW" kind="presentation" modalTransitionStyle="flipHorizontal" id="q6z-rz-I7e"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRw-cM-Sls">
-                                        <rect key="frame" x="0.0" y="240" width="320" height="240"/>
-                                        <animations/>
+                                        <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                         <state key="normal" title="no navigation controller"/>
                                         <connections>
                                             <segue destination="KdO-OE-qX9" kind="presentation" modalTransitionStyle="flipHorizontal" id="Ykf-p3-qi7"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                             </stackView>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aWf-dP-1to" firstAttribute="top" secondItem="R5w-oN-gVL" secondAttribute="top" id="VL4-TK-EZL"/>
                             <constraint firstItem="aWf-dP-1to" firstAttribute="leading" secondItem="R5w-oN-gVL" secondAttribute="leading" id="giq-DI-qH7"/>
@@ -49,11 +49,10 @@
                             <constraint firstItem="19s-on-giD" firstAttribute="top" secondItem="aWf-dP-1to" secondAttribute="bottom" id="k2g-ps-UEQ"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0M-px-kjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-312" y="522"/>
+            <point key="canvasLocation" x="-630" y="167"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rS0-t1-tr2">
@@ -62,7 +61,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vvL-CM-Nmb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="KdO-OE-qX9" kind="relationship" relationship="rootViewController" id="97B-xd-f5a"/>
@@ -70,7 +68,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EID-zs-I2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181" y="-85"/>
+            <point key="canvasLocation" x="340" y="-187"/>
         </scene>
         <!--Top View Controller-->
         <scene sceneID="AuM-Rc-j31">
@@ -81,41 +79,36 @@
                         <viewControllerLayoutGuide type="bottom" id="au0-pR-Zkl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QO9-HO-VBE">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="013-xu-fLU">
-                                <rect key="frame" x="12" y="8" width="296" height="361"/>
-                                <animations/>
+                            <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="013-xu-fLU">
+                                <rect key="frame" x="8" y="8" width="359" height="548"/>
                                 <connections>
                                     <segue destination="s0f-yF-CnK" kind="embed" id="ytc-Qd-XDi"/>
                                 </connections>
                             </containerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cmh-hd-Yke">
-                                <rect key="frame" x="16" y="378" width="292" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cmh-hd-Yke">
+                                <rect key="frame" x="12" y="565" width="347" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS5-x4-7lE">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
-                                        <animations/>
+                                        <rect key="frame" x="0.0" y="0.0" width="173.5" height="30"/>
                                         <state key="normal" title="dismiss"/>
                                         <connections>
                                             <action selector="dismiss:" destination="KdO-OE-qX9" eventType="touchUpInside" id="kjj-rL-7NZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-f8-JhD">
-                                        <rect key="frame" x="146" y="0.0" width="146" height="30"/>
-                                        <animations/>
+                                        <rect key="frame" x="173.5" y="0.0" width="173.5" height="30"/>
                                         <state key="normal" title="unwind"/>
                                         <connections>
                                             <segue destination="vcv-TM-kBQ" kind="unwind" unwindAction="unwindToChoice:" id="hjg-JP-Wbi"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                             </stackView>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.034669142216444016" green="0.28928473591804504" blue="0.54399377107620239" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.034669142216444016" green="0.28928473591804504" blue="0.54399377107620239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="au0-pR-Zkl" firstAttribute="top" secondItem="cmh-hd-Yke" secondAttribute="bottom" constant="8" id="2Mj-PS-06M"/>
                             <constraint firstItem="013-xu-fLU" firstAttribute="leading" secondItem="QO9-HO-VBE" secondAttribute="leadingMargin" constant="-8" id="5P0-8H-rFk"/>
@@ -134,12 +127,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meU-Bp-6Kv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="vcv-TM-kBQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="181" y="522"/>
+            <point key="canvasLocation" x="340" y="547"/>
         </scene>
         <!--Context View Controller-->
         <scene sceneID="9RK-Qh-Ipa">
@@ -150,50 +142,44 @@
                         <viewControllerLayoutGuide type="bottom" id="oU8-Lk-BRE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="35F-LY-DA0">
-                        <rect key="frame" x="0.0" y="0.0" width="296" height="361"/>
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IZ3-jT-5is">
-                                <rect key="frame" x="16" y="322" width="264" height="31"/>
+                                <rect key="frame" x="16" y="509" width="327" height="31"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZ0-vv-vvr">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
-                                        <animations/>
                                         <connections>
                                             <action selector="didToggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="YHn-fD-EBJ"/>
                                             <action selector="didToggleSwitch:" destination="s0f-yF-CnK" eventType="valueChanged" id="tTb-VA-aHr"/>
                                         </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defines Context" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvk-AH-Vs8">
-                                        <rect key="frame" x="57" y="5" width="123" height="20.5"/>
-                                        <animations/>
+                                        <rect key="frame" x="57" y="5.5" width="123" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tj-RG-Oyj">
-                                        <rect key="frame" x="188" y="0.0" width="76" height="30"/>
-                                        <animations/>
+                                        <rect key="frame" x="188" y="0.5" width="139" height="30"/>
                                         <state key="normal" title="unwind">
-                                            <color key="titleColor" red="0.034669142219999997" green="0.28928473589999998" blue="0.54399377110000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.034669142219999997" green="0.28928473589999998" blue="0.54399377110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="7Sn-d4-Sx6" kind="unwind" unwindAction="unwindToChoice:" id="c3Y-X8-wW1"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <animations/>
                             </stackView>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="xjT-iF-kfo">
-                                <rect key="frame" x="16" y="20" width="264" height="294"/>
-                                <animations/>
+                                <rect key="frame" x="16" y="20" width="327" height="481"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="embed" id="HXn-eX-1ac"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.070588235289999995" green="0.52156862749999999" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.070588235289999995" green="0.52156862749999999" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xjT-iF-kfo" secondAttribute="trailing" constant="16" id="35b-Zs-Hww"/>
                             <constraint firstItem="oU8-Lk-BRE" firstAttribute="top" secondItem="IZ3-jT-5is" secondAttribute="bottom" constant="8" id="JNa-LI-Wna"/>
@@ -208,7 +194,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qS-oM-KhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7Sn-d4-Sx6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="613" y="521.5"/>
+            <point key="canvasLocation" x="1141" y="546"/>
         </scene>
         <!--Context View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -219,23 +205,21 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="264" height="294"/>
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="481"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JRY-0c-c2v">
-                                <rect key="frame" x="0.0" y="0.0" width="264" height="294"/>
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="481"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNN-ex-3N9">
-                                        <rect key="frame" x="79" y="0.0" width="105" height="32.5"/>
-                                        <animations/>
+                                        <rect key="frame" x="111" y="0.0" width="105" height="53.5"/>
                                         <state key="normal" title="Standard Show"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="show" id="LI8-TI-A2R"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Np-mf-mUb">
-                                        <rect key="frame" x="103" y="32" width="57" height="33"/>
-                                        <animations/>
+                                        <rect key="frame" x="135" y="53.5" width="57" height="53.5"/>
                                         <state key="normal" title="Popover"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="popoverPresentation" popoverAnchorView="4Np-mf-mUb" id="Cbl-sv-5Zh">
@@ -244,62 +228,55 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5d-mz-pil">
-                                        <rect key="frame" x="68" y="65" width="127" height="32.5"/>
-                                        <animations/>
+                                        <rect key="frame" x="100" y="107" width="127" height="53.5"/>
                                         <state key="normal" title="Modal: Full Screen"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="fullScreen" id="T8e-0W-yx9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKj-OZ-3m7">
-                                        <rect key="frame" x="52" y="98" width="160" height="32.5"/>
-                                        <animations/>
+                                        <rect key="frame" x="83.5" y="160.5" width="160" height="53.5"/>
                                         <state key="normal" title="Modal: Current Context"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="currentContext" id="Ley-bK-Aop"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-Qo-79n">
-                                        <rect key="frame" x="67" y="130" width="129" height="33"/>
-                                        <animations/>
+                                        <rect key="frame" x="99" y="214" width="129" height="53"/>
                                         <state key="normal" title="Modal: Page Sheet"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="pageSheet" id="C3d-D0-YQV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLM-qW-3Ta">
-                                        <rect key="frame" x="67" y="163" width="130" height="32.5"/>
-                                        <animations/>
+                                        <rect key="frame" x="98.5" y="267" width="130" height="53.5"/>
                                         <state key="normal" title="Modal: Form Sheet"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="formSheet" id="mPg-wA-YCG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03m-LL-Axn">
-                                        <rect key="frame" x="50" y="196" width="163" height="32.5"/>
-                                        <animations/>
+                                        <rect key="frame" x="82" y="320.5" width="163" height="53.5"/>
                                         <state key="normal" title="Modal: Over Full Screen"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="overFullScreen" id="26S-2K-rsW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMb-70-4NV">
-                                        <rect key="frame" x="33" y="228" width="197" height="33"/>
-                                        <animations/>
+                                        <rect key="frame" x="65" y="374" width="197" height="53.5"/>
                                         <state key="normal" title="Modal: Over Current Context"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="overCurrentContext" id="700-2v-4qq"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vSz-pl-zt8">
-                                        <rect key="frame" x="6" y="261" width="251" height="32.5"/>
+                                        <rect key="frame" x="38" y="427.5" width="251" height="53.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ufl-Sc-t3e">
-                                                <rect key="frame" x="0.0" y="0.0" width="181" height="31"/>
+                                                <rect key="frame" x="0.0" y="11.5" width="181" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ubp-b2-n2a">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
-                                                        <animations/>
                                                         <connections>
                                                             <action selector="didToggleSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="E5i-RX-s2g"/>
                                                             <action selector="didToggleSwitch:" destination="s0f-yF-CnK" eventType="valueChanged" id="jzX-fD-k0M"/>
@@ -307,30 +284,24 @@
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defines Context" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1d-jt-er3">
                                                         <rect key="frame" x="58" y="5" width="123" height="20.5"/>
-                                                        <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <animations/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pia-Wg-pod">
-                                                <rect key="frame" x="201" y="1" width="50" height="30"/>
-                                                <animations/>
+                                                <rect key="frame" x="201" y="12" width="50" height="30"/>
                                                 <state key="normal" title="unwind"/>
                                                 <connections>
                                                     <segue destination="j0S-r5-NKF" kind="unwind" unwindAction="unwindToChoice:" id="ACb-KP-hpd"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <animations/>
                                     </stackView>
                                 </subviews>
-                                <animations/>
                             </stackView>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.77721047401428223" green="0.90752172470092773" blue="0.99950766563415527" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.77721047401428223" green="0.90752172470092773" blue="0.99950766563415527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JRY-0c-c2v" secondAttribute="trailing" id="C8S-Qw-7SV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JRY-0c-c2v" secondAttribute="bottom" id="IMs-hA-Vrr"/>
@@ -342,7 +313,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="j0S-r5-NKF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="522"/>
+            <point key="canvasLocation" x="1830" y="545"/>
         </scene>
         <!--Pushed view-->
         <scene sceneID="GeY-TJ-cYM">
@@ -353,27 +324,26 @@
                         <viewControllerLayoutGuide type="bottom" id="4Y0-eE-JW7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tuq-0X-YuK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jkn-04-9Da">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U7Q-4X-hY2">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoW-08-nJo">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JAX-TQ-Y3U">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fqU-xL-eJB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-0S-i8U">
-                                                                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                                                                <animations/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="navigationController?.popViewControllerAnimated(true)"/>
                                                                 <connections>
@@ -381,8 +351,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8ev-Im-cQ5">
-                                                                <rect key="frame" x="0.0" y="160" width="320" height="160"/>
-                                                                <animations/>
+                                                                <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="dismissViewControllerAnimated(true, completion: nil)"/>
                                                                 <connections>
@@ -390,8 +359,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g5A-3i-Yg5">
-                                                                <rect key="frame" x="0.0" y="320" width="320" height="160"/>
-                                                                <animations/>
+                                                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="unwind segue"/>
                                                                 <connections>
@@ -399,10 +367,8 @@
                                                                 </connections>
                                                             </button>
                                                         </subviews>
-                                                        <animations/>
                                                     </stackView>
                                                 </subviews>
-                                                <animations/>
                                                 <constraints>
                                                     <constraint firstItem="fqU-xL-eJB" firstAttribute="top" secondItem="JAX-TQ-Y3U" secondAttribute="top" id="Fkw-vR-Eto"/>
                                                     <constraint firstAttribute="trailing" secondItem="fqU-xL-eJB" secondAttribute="trailing" id="Zob-u4-JCd"/>
@@ -410,13 +376,11 @@
                                                     <constraint firstItem="fqU-xL-eJB" firstAttribute="leading" secondItem="JAX-TQ-Y3U" secondAttribute="leading" id="oZ3-g9-YIK"/>
                                                 </constraints>
                                             </view>
-                                            <animations/>
                                             <vibrancyEffect>
                                                 <blurEffect style="dark"/>
                                             </vibrancyEffect>
                                         </visualEffectView>
                                     </subviews>
-                                    <animations/>
                                     <constraints>
                                         <constraint firstItem="YoW-08-nJo" firstAttribute="top" secondItem="U7Q-4X-hY2" secondAttribute="top" id="edW-bM-vOt"/>
                                         <constraint firstAttribute="trailing" secondItem="YoW-08-nJo" secondAttribute="trailing" id="nz9-8o-OEr"/>
@@ -424,12 +388,10 @@
                                         <constraint firstAttribute="bottom" secondItem="YoW-08-nJo" secondAttribute="bottom" id="rtp-DR-1fd"/>
                                     </constraints>
                                 </view>
-                                <animations/>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Jkn-04-9Da" secondAttribute="trailing" id="9V7-9u-FeI"/>
                             <constraint firstItem="4Y0-eE-JW7" firstAttribute="top" secondItem="Jkn-04-9Da" secondAttribute="bottom" id="JQ3-CH-RYT"/>
@@ -450,24 +412,21 @@
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sV7-pt-i6d">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="vBn-57-wb7">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <animations/>
                                 </view>
-                                <animations/>
                                 <vibrancyEffect>
                                     <blurEffect style="light"/>
                                 </vibrancyEffect>
                             </visualEffectView>
                         </subviews>
-                        <animations/>
                     </view>
-                    <animations/>
                     <blurEffect style="light"/>
                 </visualEffectView>
             </objects>
-            <point key="canvasLocation" x="1430" y="522"/>
+            <point key="canvasLocation" x="2774" y="546"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
