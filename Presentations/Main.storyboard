@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ru2-eg-iY7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ru2-eg-iY7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,14 +26,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-wW-9Je">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                                         <state key="normal" title="navigation controller"/>
                                         <connections>
                                             <segue destination="NOj-PN-vyW" kind="presentation" modalTransitionStyle="flipHorizontal" id="q6z-rz-I7e"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRw-cM-Sls">
-                                        <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                                        <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
                                         <state key="normal" title="no navigation controller"/>
                                         <connections>
                                             <segue destination="KdO-OE-qX9" kind="presentation" modalTransitionStyle="flipHorizontal" id="Ykf-p3-qi7"/>
@@ -59,7 +60,7 @@
             <objects>
                 <navigationController id="NOj-PN-vyW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vvL-CM-Nmb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -79,7 +80,7 @@
                         <viewControllerLayoutGuide type="bottom" id="au0-pR-Zkl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QO9-HO-VBE">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="013-xu-fLU">
@@ -173,7 +174,7 @@
                                 </subviews>
                             </stackView>
                             <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="xjT-iF-kfo">
-                                <rect key="frame" x="16" y="20" width="327" height="481"/>
+                                <rect key="frame" x="16" y="40" width="327" height="461"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="embed" id="HXn-eX-1ac"/>
                                 </connections>
@@ -194,7 +195,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qS-oM-KhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7Sn-d4-Sx6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1141" y="546"/>
+            <point key="canvasLocation" x="1116" y="544"/>
         </scene>
         <!--Context View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -205,21 +206,21 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="327" height="481"/>
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="461"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JRY-0c-c2v">
-                                <rect key="frame" x="0.0" y="0.0" width="327" height="481"/>
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="461"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNN-ex-3N9">
-                                        <rect key="frame" x="111" y="0.0" width="105" height="53.5"/>
+                                        <rect key="frame" x="111" y="0.0" width="105" height="51"/>
                                         <state key="normal" title="Standard Show"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="show" id="LI8-TI-A2R"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Np-mf-mUb">
-                                        <rect key="frame" x="135" y="53.5" width="57" height="53.5"/>
+                                        <rect key="frame" x="135" y="51" width="57" height="51.5"/>
                                         <state key="normal" title="Popover"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="popoverPresentation" popoverAnchorView="4Np-mf-mUb" id="Cbl-sv-5Zh">
@@ -228,52 +229,52 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5d-mz-pil">
-                                        <rect key="frame" x="100" y="107" width="127" height="53.5"/>
+                                        <rect key="frame" x="100" y="102.5" width="127" height="51"/>
                                         <state key="normal" title="Modal: Full Screen"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="fullScreen" id="T8e-0W-yx9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKj-OZ-3m7">
-                                        <rect key="frame" x="83.5" y="160.5" width="160" height="53.5"/>
+                                        <rect key="frame" x="83.5" y="153.5" width="160" height="51.5"/>
                                         <state key="normal" title="Modal: Current Context"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="currentContext" id="Ley-bK-Aop"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-Qo-79n">
-                                        <rect key="frame" x="99" y="214" width="129" height="53"/>
+                                        <rect key="frame" x="99" y="205" width="129" height="51"/>
                                         <state key="normal" title="Modal: Page Sheet"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="pageSheet" id="C3d-D0-YQV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLM-qW-3Ta">
-                                        <rect key="frame" x="98.5" y="267" width="130" height="53.5"/>
+                                        <rect key="frame" x="98.5" y="256" width="130" height="51.5"/>
                                         <state key="normal" title="Modal: Form Sheet"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="formSheet" id="mPg-wA-YCG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03m-LL-Axn">
-                                        <rect key="frame" x="82" y="320.5" width="163" height="53.5"/>
+                                        <rect key="frame" x="82" y="307.5" width="163" height="51"/>
                                         <state key="normal" title="Modal: Over Full Screen"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="overFullScreen" id="26S-2K-rsW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMb-70-4NV">
-                                        <rect key="frame" x="65" y="374" width="197" height="53.5"/>
+                                        <rect key="frame" x="65" y="358.5" width="197" height="51.5"/>
                                         <state key="normal" title="Modal: Over Current Context"/>
                                         <connections>
                                             <segue destination="Jgn-xQ-XFX" kind="presentation" modalPresentationStyle="overCurrentContext" id="700-2v-4qq"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vSz-pl-zt8">
-                                        <rect key="frame" x="38" y="427.5" width="251" height="53.5"/>
+                                        <rect key="frame" x="38" y="410" width="251" height="51"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ufl-Sc-t3e">
-                                                <rect key="frame" x="0.0" y="11.5" width="181" height="31"/>
+                                                <rect key="frame" x="0.0" y="10" width="181" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ubp-b2-n2a">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -290,7 +291,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pia-Wg-pod">
-                                                <rect key="frame" x="201" y="12" width="50" height="30"/>
+                                                <rect key="frame" x="201" y="10.5" width="50" height="30"/>
                                                 <state key="normal" title="unwind"/>
                                                 <connections>
                                                     <segue destination="j0S-r5-NKF" kind="unwind" unwindAction="unwindToChoice:" id="ACb-KP-hpd"/>
@@ -324,42 +325,168 @@
                         <viewControllerLayoutGuide type="bottom" id="4Y0-eE-JW7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tuq-0X-YuK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="461"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jkn-04-9Da">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U7Q-4X-hY2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoW-08-nJo">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JAX-TQ-Y3U">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fqU-xL-eJB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fqU-xL-eJB">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="461"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85S-04-Ljg">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="148.5"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DdL-0i-fPL">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="148"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2w-bO-vMq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="148"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mxh-qO-aM7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="148"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-0S-i8U">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                <state key="normal" title="navigationController?.popViewControllerAnimated(true)"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-0S-i8U">
+                                                                <rect key="frame" x="0.0" y="0.0" width="327" height="148"/>
+                                                                <state key="normal">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="POP">
+                                                                            <attributes>
+                                                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <font key="NSFont" size="30" name="HelveticaNeue-Bold"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                        <fragment>
+                                                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                            <attributes>
+                                                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <font key="NSFont" metaFont="system" size="19"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                        <fragment>
+                                                                            <string key="content">navigationController?
+.popViewController
+(animated: true)</string>
+                                                                            <attributes>
+                                                                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <font key="NSFont" metaFont="system" size="19"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="didTapPopButton:" destination="Jgn-xQ-XFX" eventType="touchUpInside" id="Tql-4e-vTj"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8ev-Im-cQ5">
-                                                                <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                <state key="normal" title="dismissViewControllerAnimated(true, completion: nil)"/>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="zLn-0S-i8U" firstAttribute="leading" secondItem="Mxh-qO-aM7" secondAttribute="leading" id="Ckb-0o-zKk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="zLn-0S-i8U" secondAttribute="trailing" id="gyU-8Y-tGo"/>
+                                                            <constraint firstItem="zLn-0S-i8U" firstAttribute="top" secondItem="Mxh-qO-aM7" secondAttribute="top" id="mae-0R-Wo2"/>
+                                                            <constraint firstAttribute="bottom" secondItem="zLn-0S-i8U" secondAttribute="bottom" id="od8-mw-sAc"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <vibrancyEffect>
+                                                        <blurEffect style="dark"/>
+                                                    </vibrancyEffect>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="W2w-bO-vMq" secondAttribute="bottom" id="7uL-xc-Hd8"/>
+                                                <constraint firstItem="W2w-bO-vMq" firstAttribute="top" secondItem="DdL-0i-fPL" secondAttribute="top" id="H5i-ZW-4OU"/>
+                                                <constraint firstItem="W2w-bO-vMq" firstAttribute="leading" secondItem="DdL-0i-fPL" secondAttribute="leading" id="WYf-wj-u0Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="W2w-bO-vMq" secondAttribute="trailing" id="oxm-yZ-3mQ"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2C-Cs-I0H">
+                                        <rect key="frame" x="0.0" y="156.5" width="327" height="148"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4qf-P2-CCY">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="148"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jpc-WM-82m">
+                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="147.5"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZPz-dP-a5g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="147.5"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ev-Im-cQ5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="327" height="147.5"/>
+                                                                <state key="normal">
+                                                                    <attributedString key="attributedTitle">
+                                                                        <fragment content="DISMISS">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="30" name="HelveticaNeue-Bold"/>
+                                                                                <font key="NSOriginalFont" size="19" name="HelveticaNeue"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                        <fragment>
+                                                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                                                                <font key="NSOriginalFont" size="19" name="HelveticaNeue"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                        <fragment content="dismiss(animated: true, completion: nil)">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                                                                <font key="NSOriginalFont" size="19" name="HelveticaNeue"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="didTapDismissButton:" destination="Jgn-xQ-XFX" eventType="touchUpInside" id="RZU-hm-WQB"/>
                                                                 </connections>
                                                             </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="8ev-Im-cQ5" firstAttribute="leading" secondItem="ZPz-dP-a5g" secondAttribute="leading" id="3j8-k3-dnE"/>
+                                                            <constraint firstAttribute="trailing" secondItem="8ev-Im-cQ5" secondAttribute="trailing" id="4Oh-35-sZV"/>
+                                                            <constraint firstItem="8ev-Im-cQ5" firstAttribute="top" secondItem="ZPz-dP-a5g" secondAttribute="top" id="NrS-gh-FTa"/>
+                                                            <constraint firstAttribute="bottom" secondItem="8ev-Im-cQ5" secondAttribute="bottom" id="gnQ-al-NCU"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <vibrancyEffect>
+                                                        <blurEffect style="dark"/>
+                                                    </vibrancyEffect>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Jpc-WM-82m" secondAttribute="trailing" id="B5X-xV-23Q"/>
+                                                <constraint firstItem="Jpc-WM-82m" firstAttribute="top" secondItem="4qf-P2-CCY" secondAttribute="top" id="Pd6-LS-1Vq"/>
+                                                <constraint firstItem="Jpc-WM-82m" firstAttribute="leading" secondItem="4qf-P2-CCY" secondAttribute="leading" id="Ytk-ky-Pa9"/>
+                                                <constraint firstAttribute="bottom" secondItem="Jpc-WM-82m" secondAttribute="bottom" id="q6g-Da-w2C"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="829-BS-hXQ">
+                                        <rect key="frame" x="0.0" y="312.5" width="327" height="148.5"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ctx-X9-CYz">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="149"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fys-Fm-p7E">
+                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="149"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="trZ-Tn-VUg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="149"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g5A-3i-Yg5">
-                                                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                                                <rect key="frame" x="0.0" y="-0.5" width="327" height="149.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="unwind segue"/>
                                                                 <connections>
@@ -367,36 +494,36 @@
                                                                 </connections>
                                                             </button>
                                                         </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="fqU-xL-eJB" firstAttribute="top" secondItem="JAX-TQ-Y3U" secondAttribute="top" id="Fkw-vR-Eto"/>
-                                                    <constraint firstAttribute="trailing" secondItem="fqU-xL-eJB" secondAttribute="trailing" id="Zob-u4-JCd"/>
-                                                    <constraint firstAttribute="bottom" secondItem="fqU-xL-eJB" secondAttribute="bottom" id="iSK-bQ-2yf"/>
-                                                    <constraint firstItem="fqU-xL-eJB" firstAttribute="leading" secondItem="JAX-TQ-Y3U" secondAttribute="leading" id="oZ3-g9-YIK"/>
-                                                </constraints>
-                                            </view>
-                                            <vibrancyEffect>
-                                                <blurEffect style="dark"/>
-                                            </vibrancyEffect>
-                                        </visualEffectView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="YoW-08-nJo" firstAttribute="top" secondItem="U7Q-4X-hY2" secondAttribute="top" id="edW-bM-vOt"/>
-                                        <constraint firstAttribute="trailing" secondItem="YoW-08-nJo" secondAttribute="trailing" id="nz9-8o-OEr"/>
-                                        <constraint firstItem="YoW-08-nJo" firstAttribute="leading" secondItem="U7Q-4X-hY2" secondAttribute="leading" id="oqK-5j-asF"/>
-                                        <constraint firstAttribute="bottom" secondItem="YoW-08-nJo" secondAttribute="bottom" id="rtp-DR-1fd"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="dark"/>
-                            </visualEffectView>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="g5A-3i-Yg5" secondAttribute="trailing" id="H7z-02-lPA"/>
+                                                            <constraint firstAttribute="bottom" secondItem="g5A-3i-Yg5" secondAttribute="bottom" id="HF8-Vw-ZLH"/>
+                                                            <constraint firstItem="g5A-3i-Yg5" firstAttribute="top" secondItem="trZ-Tn-VUg" secondAttribute="top" id="O9p-QY-dLP"/>
+                                                            <constraint firstItem="g5A-3i-Yg5" firstAttribute="leading" secondItem="trZ-Tn-VUg" secondAttribute="leading" id="fme-bu-ni3"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <vibrancyEffect>
+                                                        <blurEffect style="dark"/>
+                                                    </vibrancyEffect>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Fys-Fm-p7E" secondAttribute="trailing" id="74t-og-Oks"/>
+                                                <constraint firstItem="Fys-Fm-p7E" firstAttribute="leading" secondItem="Ctx-X9-CYz" secondAttribute="leading" id="LBF-hW-AG3"/>
+                                                <constraint firstItem="Fys-Fm-p7E" firstAttribute="top" secondItem="Ctx-X9-CYz" secondAttribute="top" id="v2b-Ym-mvD"/>
+                                                <constraint firstAttribute="bottom" secondItem="Fys-Fm-p7E" secondAttribute="bottom" id="vnt-nk-7Sa"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Jkn-04-9Da" secondAttribute="trailing" id="9V7-9u-FeI"/>
-                            <constraint firstItem="4Y0-eE-JW7" firstAttribute="top" secondItem="Jkn-04-9Da" secondAttribute="bottom" id="JQ3-CH-RYT"/>
-                            <constraint firstItem="Jkn-04-9Da" firstAttribute="top" secondItem="Tuq-0X-YuK" secondAttribute="top" id="a0P-st-8De"/>
-                            <constraint firstItem="Jkn-04-9Da" firstAttribute="leading" secondItem="Tuq-0X-YuK" secondAttribute="leading" id="p5j-EB-51l"/>
+                            <constraint firstAttribute="trailing" secondItem="fqU-xL-eJB" secondAttribute="trailing" id="k9W-6f-nyB"/>
+                            <constraint firstAttribute="bottom" secondItem="fqU-xL-eJB" secondAttribute="bottom" id="krI-aS-yJn"/>
+                            <constraint firstItem="fqU-xL-eJB" firstAttribute="top" secondItem="4Xp-xv-z7B" secondAttribute="bottom" id="tpQ-cg-on7"/>
+                            <constraint firstItem="fqU-xL-eJB" firstAttribute="leading" secondItem="Tuq-0X-YuK" secondAttribute="leading" id="w3p-Mo-GfL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pushed view" id="c2s-YK-Pdj"/>
@@ -430,7 +557,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="700-2v-4qq"/>
         <segue reference="Ykf-p3-qi7"/>
-        <segue reference="mPg-wA-YCG"/>
     </inferredMetricsTieBreakers>
 </document>
